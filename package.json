@@ -1,0 +1,14 @@
+{
+  "name": "Node Reddit",
+  "version": "0.0.1",
+  "scripts": {
+    "development:server": "npm run --prefix ./server/ development",
+    "development:client": "npm run --prefix ./client/ serve",
+    "development": "concurrently \"redis-server\" \"npm:development:server\" \"npm:development:client\""
+  },
+  "author": "Przemysław Łapiński",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^6.0.2"
+  }
+}
